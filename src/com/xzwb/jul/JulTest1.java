@@ -23,10 +23,9 @@ public class JulTest1 {
         consoleHandler.setLevel(Level.ALL);
 
         // 文件输出
-        FileHandler fileHandler = new FileHandler("/home/xzwb/jul.log");
+        FileHandler fileHandler = new FileHandler("/home/xzwb/jul.log", true);
         fileHandler.setFormatter(simpleFormatter);
         logger.addHandler(fileHandler);
-
 
 
         logger.severe("sever");
